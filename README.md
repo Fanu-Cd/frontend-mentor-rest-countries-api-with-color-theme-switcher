@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: https://github.com/Fanu-Cd/frontend-mentor-rest-countries-api-with-color-theme-switcher
-- Live Site URL: '-'
+- Live Site URL: 'https://frontend-mentor-rest-countries-api-with-color-fanu-cds-projects.vercel.app/'
 
 ### My process
 
