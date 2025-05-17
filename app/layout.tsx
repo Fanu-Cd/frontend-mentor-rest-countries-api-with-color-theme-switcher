@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import "@mantine/core/styles.css";
+import "./globals.css";
 import { MantineProvider } from "@mantine/core";
+import ReactQueryProvider from "./contexts/react-query-provider";
 
 export const metadata: Metadata = {
   title: "Rest Countries Api With Color Theme Switcher",
@@ -16,7 +17,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <MantineProvider>{children}</MantineProvider>
+        <ReactQueryProvider>
+          <MantineProvider
+            theme={{
+              breakpoints: {
+                sm: "640px",
+                md: "768px",
+                lg: "1024px",
+                xl: "1280px",
+                "2xl": "1536px",
+              },
+            }}
+          >
+            {children}
+          </MantineProvider>
+        </ReactQueryProvider>
       </body>
     </html>
   );
